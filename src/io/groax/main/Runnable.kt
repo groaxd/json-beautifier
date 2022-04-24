@@ -21,7 +21,7 @@ object Runnable {
         println(" 2 = Sadece kart bilgileri")
         print("Modu seç: ")
         val currentMode = scanner.nextLine()
-        val currentPath = /*Paths.get("").toAbsolutePath().toString()*/ "C:\\Users\\PC\\Documents\\CraftRiseAccountStealer" + "\\"
+        val currentPath = Paths.get("").toAbsolutePath().toString() + "\\"
         val inputFile = File(currentPath + "\\" + current)
         val outputFile = File(currentPath + "\\" + current.replace("\\.[a-zA-Z]+".toRegex(), "") + "-out.txt")
         if (outputFile.exists()) {
